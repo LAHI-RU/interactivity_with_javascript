@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>JavaScript HTML Events</h1>
-    <h2>The onclick Attribute</h2>
+    <h1>The JavaScript <i>this</i> Keyword</h1>
 
-    <p>Click the button to display the date.</p>
-    <button onclick="displayDate()">The time is?</button>
-
-    <script>
-      function displayDate() {
-        document.getElementById("demo").innerHTML = Date();
-      }
-    </script>
+    <p>In this example, <b>this</b> refers to the window object:</p>
 
     <p id="demo"></p>
+
+    <script>
+      let x = this;
+      document.getElementById("demo").innerHTML = x;
+    </script>
   </body>
 </html>
