@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    div {
+      border: 1px solid black;
+      padding: 16px;
+    }
+  </style>
+
+  <body>
+    <h1>The Element Object</h1>
+    <h2>The getElementsByTagName() Method</h2>
+
+    <div id="myDIV">
+      <p>I am a paragraph.</p>
+      <p>I am a paragraph.</p>
+      <p>I am a paragraph.</p>
+    </div>
+
+    <p>The number of p elements in "myDIV" is:</p>
+    <p id="demo"></p>
+
+    <script>
+      const element = document.getElementById("myDIV");
+      const nodes = element.getElementsByTagName("p");
+      document.getElementById("demo").innerHTML = nodes.length;
+    </script>
+  </body>
+</html>
