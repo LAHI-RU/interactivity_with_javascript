@@ -3,16 +3,18 @@
   <body>
     <h1>JavaScript Variables</h1>
 
-    <p>In this example, x, y, and z are undeclared.</p>
-    <p>They are automatically declared when first used.</p>
+    <p>Strings are written with quotes.</p>
+    <p>Numbers are written without quotes.</p>
 
     <p id="demo"></p>
 
     <script>
-      x = 5;
-      y = 6;
-      z = x + y;
-      document.getElementById("demo").innerHTML = "The value of z is: " + z;
+      const pi = 3.14;
+      let person = "John Doe";
+      let answer = "Yes I am!";
+
+      document.getElementById("demo").innerHTML =
+        pi + "<br>" + person + "<br>" + answer;
     </script>
   </body>
 </html>
