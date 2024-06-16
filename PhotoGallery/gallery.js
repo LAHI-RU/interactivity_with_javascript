@@ -1,7 +1,11 @@
 function upDate(previewPic) {
-  const update = document.getElementById("image").innerHTML;
-  update.innerHTML = previewPic.alt;
-  update.style.background = "url(+ previ";
+  old = document.getElementById("image").innerHTML;
+  document.getElementById("image").innerHTML = previewPic.alt;
+  document.getElementById("image").style.background =
+    "url(" + previewPic.src + ")";
 }
 
-function unDo() {}
+function unDo() {
+  document.getElementById("image").innerHTML = old;
+  document.getElementById("image").style.background = "#8e68ff";
+}
