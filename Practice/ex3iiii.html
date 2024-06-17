@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>The Document Object</h1>
-    <h2>The getElementsByTagName() Method</h2>
+    <h1>The HTMLCollection Object</h1>
+    <h2>The length Property</h2>
 
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
+    <p>Click "Change" to change all elements with class="myclass":</p>
+    <button onclick="myFunction()">Change</button>
+
+    <p id="01">I am a paragraph.</p>
+    <p class="myclass">I am a paragraph.</p>
+    <p class="myclass">I am a paragraph.</p>
 
     <script>
-      document.getElementsByTagName("p")[1].innerHTML = "Hello World!";
+      function myFunction() {
+        const collection = document.getElementsByClassName("myclass");
+        for (let i = 0; i < collection.length; i++) {
+          collection[i].style.fontSize = "24px";
+        }
+
+        document.getElementById("01").style.color = "red";
+      }
     </script>
   </body>
 </html>
