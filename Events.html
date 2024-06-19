@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <script>
       function message(msg) {
         document.getElementById("output").innerHTML = msg + " event";
       }
     </script>
+
     <title>Document</title>
   </head>
+  
   <body onload="message('LOAD')" onresize="message('RESIZE')">
     <h1>JavaScript Events - Responding to Events</h1>
     <p onclick="message('CLICK')">
