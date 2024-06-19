@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h2>My First Web Page</h2>
+    <h2>JavaScript Debugger</h2>
+
+    <p id="demo"></p>
 
     <p>
-      Activate debugging in your browser (Chrome, IE, Firefox) with F12, and
-      select "Console" in the debugger menu.
+      With the debugger turned on, the code below should stop executing before
+      it executes the third line.
     </p>
 
     <script>
-      a = 5;
-      b = 6;
-      c = a + b;
-      console.log(c);
+      let x = 15 * 5;
+      debugger;
+      document.getElementById("demo").innerHTML = x;
     </script>
   </body>
 </html>
