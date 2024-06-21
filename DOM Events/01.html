@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>HTML DOM Events</h1>
+    <h2>The afterprint Event</h2>
+
+    <p>Use the HTML DOM to assign an "onafterprint" event to a body element.</p>
+
+    <h3>Print this document!</h3>
+    <p><b>Tip</b>: The keyboard shortcut Ctrl+P prints a page.</p>
+
+    <script>
+      document.getElementsByTagName("body")[0].onafterprint = function () {
+        myFunction();
+      };
+
+      function myFunction() {
+        alert("This document is now being printed");
+      }
+    </script>
+  </body>
+</html>
