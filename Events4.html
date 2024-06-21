@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modify the DOM</title>
+
+    <style>
+      button {
+        width: 150px;
+        background-color: #00ccee;
+        margin-left: 15px;
+        font-size: 120%;
+      }
+      p {
+        border: 2px solid black;
+        text-align: center;
+        margin: 20px;
+        width: 300px;
+      }
+      #stuff {
+        text-align: center;
+        color: white;
+        background-color: #7f7f7f;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Modify the DOM</h1>
+    <button
+      onclick="document.getElementById('stuff').innerHTML = 'Clicked First Button'"
+    >
+      First
+    </button>
+
+    <button
+      onclick="document.getElementById('stuff').innerHTML = 'Clicked Third Button'"
+    >
+      Third
+    </button>
+
+    <p>This code shouldn't change</p>
+    <p id="stuff">This wiil change</p>
+    <p>This shouldn't change either</p>
+  </body>
+</html>
