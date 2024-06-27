@@ -7,10 +7,12 @@
     <p>The typeof operator, when used on an array, returns object:</p>
 
     <p id="demo"></p>
+    <p id="demo2"></p>
 
     <script>
       const fruits = ["Banana", "Orange", "Apple", "Mango"];
       document.getElementById("demo").innerHTML = typeof fruits;
+      document.getElementById("demo2").innerHTML = Array.isArray(fruits);
     </script>
   </body>
 </html>
