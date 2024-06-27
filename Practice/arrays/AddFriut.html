@@ -7,6 +7,20 @@
   </head>
   <body onload="loadFruits()">
     <button onclick="myFunction()">Add your Favourite!</button>
-    <p id="demo"></p>
+    <p id="fruits"></p>
+
+    <script>
+      var fruits = ["Banana", "Orange", "Apple", "mango"];
+
+      function loadFruits() {
+        document.getElementById("fruits").innerHTML = fruits;
+      }
+
+      function mayFunction() {
+        var fruit = prompt("What is your favourite fruit ?");
+        fruits[fruits.length] = fruit;
+        document.getElementById("fruits").innerHTML = fruits;
+      }
+    </script>
   </body>
 </html>
