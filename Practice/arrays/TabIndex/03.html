@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The Element Object</h1>
+    <h2>The getAttribute() Method</h2>
+
+    Learn more about the
+    <a id="myAnchor" href="dom_obj_attributes.asp" target="_blank"
+      >Attr object</a
+    >.
+
+    <p>The value of the target attribute of the link above is:</p>
+
+    <p id="demo"></p>
+
+    <script>
+      const myAnchor = document.getElementById("myAnchor");
+      let text = myAnchor.getAttribute("target");
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>
