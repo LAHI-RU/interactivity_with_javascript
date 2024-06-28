@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 id="myH1" class="democlass">The Element Object</h1>
+    <h2>The getAttribute() Method</h2>
+
+    <p>The value of the class attribute of the h1 element is:</p>
+
+    <p id="demo"></p>
+
+    <script>
+      const element = document.getElementById("myH1");
+      let text = element.getAttribute("class");
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>
